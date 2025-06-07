@@ -1,0 +1,96 @@
+body {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.RegisterPage {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 370px;
+    text-align: center;
+}
+
+.RegisterPage h2 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.register__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.register__form input {
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 0 15px;
+    transition: border-color 0.3s ease;
+}
+
+.register__form input:focus {
+    border-color: #667eea;
+    outline: none;
+}
+
+.register__button {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #667eea;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.register__button:hover {
+    background-color: #5a67d8;
+}
+
+.register__bottom {
+    margin-top: 15px;
+}
+
+.register__bottom span {
+    color: #764ba2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register__bottom span:hover {
+    text-decoration: underline;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    padding-right: 40px;
+}
+
+.password-wrapper span {
+    position: absolute;
+    right: 12px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #999;
+    transition: color 0.3s ease;
+    user-select: none;
+}
+
+.password-wrapper span:hover {
+    color: #667eea;
+}
